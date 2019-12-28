@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68EA501C23B72B2200166C66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EA501B23B72B2200166C66 /* AppDelegate.m */; };
+		68EA502223B72B2200166C66 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EA502123B72B2200166C66 /* ViewController.m */; };
+		68EA502523B72B2200166C66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68EA502323B72B2200166C66 /* Main.storyboard */; };
+		68EA502723B72B2500166C66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68EA502623B72B2500166C66 /* Assets.xcassets */; };
+		68EA502A23B72B2500166C66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68EA502823B72B2500166C66 /* LaunchScreen.storyboard */; };
+		68EA502D23B72B2500166C66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EA502C23B72B2500166C66 /* main.m */; };
+		68EA503723B72B2500166C66 /* YTX_AlertViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EA503623B72B2500166C66 /* YTX_AlertViewTests.m */; };
+		68EA504223B72B2500166C66 /* YTX_AlertViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EA504123B72B2500166C66 /* YTX_AlertViewUITests.m */; };
+		68EA505623B72DE100166C66 /* UIButton+ExtendTouchRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EA505523B72DE100166C66 /* UIButton+ExtendTouchRect.m */; };
+		68EA505923B72E2000166C66 /* NSObject+AOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EA505823B72E2000166C66 /* NSObject+AOP.m */; };
+		68EA505C23B72EE800166C66 /* YTX_AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EA505B23B72EE800166C66 /* YTX_AlertViewController.m */; };
+		68EA507923B7300800166C66 /* AddMenu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68EA505E23B7300800166C66 /* AddMenu.xcassets */; };
+		68EA507A23B7300800166C66 /* YTXAddMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EA505F23B7300800166C66 /* YTXAddMenuView.m */; };
+		68EA507B23B7300800166C66 /* YTX_MenuIconTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EA506123B7300800166C66 /* YTX_MenuIconTextCell.m */; };
+		68EA507C23B7300800166C66 /* YTX_MemuBaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68EA506223B7300800166C66 /* YTX_MemuBaseCell.xib */; };
+		68EA507D23B7300800166C66 /* YTX_MenuSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EA506423B7300800166C66 /* YTX_MenuSwitchTableViewCell.m */; };
+		68EA507E23B7300800166C66 /* YTX_MenuSwitchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68EA506623B7300800166C66 /* YTX_MenuSwitchTableViewCell.xib */; };
+		68EA507F23B7300800166C66 /* YTX_MenuTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68EA506823B7300800166C66 /* YTX_MenuTitleTableViewCell.xib */; };
+		68EA508023B7300800166C66 /* YTX_MemuBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EA506A23B7300800166C66 /* YTX_MemuBaseCell.m */; };
+		68EA508123B7300800166C66 /* YTX_MenuTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EA506B23B7300800166C66 /* YTX_MenuTitleTableViewCell.m */; };
+		68EA508223B7300800166C66 /* YTXAddMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EA506D23B7300800166C66 /* YTXAddMenuItem.m */; };
+		68EA508323B7300800166C66 /* YTXMenuConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EA506E23B7300800166C66 /* YTXMenuConfig.m */; };
+		68EA508423B7300800166C66 /* YTX_MenuTableViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EA507223B7300800166C66 /* YTX_MenuTableViewProxy.m */; };
+		68EA508523B7300800166C66 /* YTX_ActionSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EA507723B7300800166C66 /* YTX_ActionSheetCell.m */; };
+		68EA508623B7300800166C66 /* TYX_ActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EA507823B7300800166C66 /* TYX_ActionSheet.m */; };
+		ADC05727399D0D76DAF493F7 /* Pods_YTX_AlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF701319483E8A4257CBF2DB /* Pods_YTX_AlertView.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68EA503323B72B2500166C66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68EA500F23B72B2200166C66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68EA501623B72B2200166C66;
+			remoteInfo = YTX_AlertView;
+		};
+		68EA503E23B72B2500166C66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68EA500F23B72B2200166C66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68EA501623B72B2200166C66;
+			remoteInfo = YTX_AlertView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A914FBFD77CCB7538E62584 /* Pods-YTX_AlertView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTX_AlertView.release.xcconfig"; path = "Target Support Files/Pods-YTX_AlertView/Pods-YTX_AlertView.release.xcconfig"; sourceTree = "<group>"; };
+		68EA501723B72B2200166C66 /* YTX_AlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YTX_AlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68EA501A23B72B2200166C66 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		68EA501B23B72B2200166C66 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		68EA502023B72B2200166C66 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		68EA502123B72B2200166C66 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		68EA502423B72B2200166C66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68EA502623B72B2500166C66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68EA502923B72B2500166C66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68EA502B23B72B2500166C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68EA502C23B72B2500166C66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68EA503223B72B2500166C66 /* YTX_AlertViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YTX_AlertViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68EA503623B72B2500166C66 /* YTX_AlertViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTX_AlertViewTests.m; sourceTree = "<group>"; };
+		68EA503823B72B2500166C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68EA503D23B72B2500166C66 /* YTX_AlertViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YTX_AlertViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68EA504123B72B2500166C66 /* YTX_AlertViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTX_AlertViewUITests.m; sourceTree = "<group>"; };
+		68EA504323B72B2500166C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68EA505423B72DE100166C66 /* UIButton+ExtendTouchRect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ExtendTouchRect.h"; sourceTree = "<group>"; };
+		68EA505523B72DE100166C66 /* UIButton+ExtendTouchRect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ExtendTouchRect.m"; sourceTree = "<group>"; };
+		68EA505723B72E2000166C66 /* NSObject+AOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AOP.h"; sourceTree = "<group>"; };
+		68EA505823B72E2000166C66 /* NSObject+AOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AOP.m"; sourceTree = "<group>"; };
+		68EA505A23B72EE800166C66 /* YTX_AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTX_AlertViewController.h; sourceTree = "<group>"; };
+		68EA505B23B72EE800166C66 /* YTX_AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTX_AlertViewController.m; sourceTree = "<group>"; };
+		68EA505E23B7300800166C66 /* AddMenu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AddMenu.xcassets; sourceTree = "<group>"; };
+		68EA505F23B7300800166C66 /* YTXAddMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTXAddMenuView.m; sourceTree = "<group>"; };
+		68EA506123B7300800166C66 /* YTX_MenuIconTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTX_MenuIconTextCell.m; sourceTree = "<group>"; };
+		68EA506223B7300800166C66 /* YTX_MemuBaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTX_MemuBaseCell.xib; sourceTree = "<group>"; };
+		68EA506323B7300800166C66 /* YTX_MemuBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTX_MemuBaseCell.h; sourceTree = "<group>"; };
+		68EA506423B7300800166C66 /* YTX_MenuSwitchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTX_MenuSwitchTableViewCell.m; sourceTree = "<group>"; };
+		68EA506523B7300800166C66 /* YTX_MenuTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTX_MenuTitleTableViewCell.h; sourceTree = "<group>"; };
+		68EA506623B7300800166C66 /* YTX_MenuSwitchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTX_MenuSwitchTableViewCell.xib; sourceTree = "<group>"; };
+		68EA506723B7300800166C66 /* YTX_MenuIconTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTX_MenuIconTextCell.h; sourceTree = "<group>"; };
+		68EA506823B7300800166C66 /* YTX_MenuTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTX_MenuTitleTableViewCell.xib; sourceTree = "<group>"; };
+		68EA506923B7300800166C66 /* YTX_MenuSwitchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTX_MenuSwitchTableViewCell.h; sourceTree = "<group>"; };
+		68EA506A23B7300800166C66 /* YTX_MemuBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTX_MemuBaseCell.m; sourceTree = "<group>"; };
+		68EA506B23B7300800166C66 /* YTX_MenuTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTX_MenuTitleTableViewCell.m; sourceTree = "<group>"; };
+		68EA506D23B7300800166C66 /* YTXAddMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTXAddMenuItem.m; sourceTree = "<group>"; };
+		68EA506E23B7300800166C66 /* YTXMenuConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTXMenuConfig.m; sourceTree = "<group>"; };
+		68EA506F23B7300800166C66 /* YTX_MenuTableViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTX_MenuTableViewProxy.h; sourceTree = "<group>"; };
+		68EA507023B7300800166C66 /* YTXMenuConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTXMenuConfig.h; sourceTree = "<group>"; };
+		68EA507123B7300800166C66 /* YTXAddMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTXAddMenuItem.h; sourceTree = "<group>"; };
+		68EA507223B7300800166C66 /* YTX_MenuTableViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTX_MenuTableViewProxy.m; sourceTree = "<group>"; };
+		68EA507323B7300800166C66 /* YTXAddMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTXAddMenuView.h; sourceTree = "<group>"; };
+		68EA507523B7300800166C66 /* YTX_ActionSheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTX_ActionSheetCell.h; sourceTree = "<group>"; };
+		68EA507623B7300800166C66 /* TYX_ActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYX_ActionSheet.h; sourceTree = "<group>"; };
+		68EA507723B7300800166C66 /* YTX_ActionSheetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTX_ActionSheetCell.m; sourceTree = "<group>"; };
+		68EA507823B7300800166C66 /* TYX_ActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYX_ActionSheet.m; sourceTree = "<group>"; };
+		8FE11426692945AC9208C8A5 /* Pods-YTX_AlertView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTX_AlertView.debug.xcconfig"; path = "Target Support Files/Pods-YTX_AlertView/Pods-YTX_AlertView.debug.xcconfig"; sourceTree = "<group>"; };
+		BF701319483E8A4257CBF2DB /* Pods_YTX_AlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YTX_AlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68EA501423B72B2200166C66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADC05727399D0D76DAF493F7 /* Pods_YTX_AlertView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68EA502F23B72B2500166C66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68EA503A23B72B2500166C66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68EA500E23B72B2200166C66 = {
+			isa = PBXGroup;
+			children = (
+				68EA501923B72B2200166C66 /* YTX_AlertView */,
+				68EA503523B72B2500166C66 /* YTX_AlertViewTests */,
+				68EA504023B72B2500166C66 /* YTX_AlertViewUITests */,
+				68EA501823B72B2200166C66 /* Products */,
+				B17491A3E1BED665CF9005B9 /* Pods */,
+				BBBD6BAA482E0A7BA96335C1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		68EA501823B72B2200166C66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68EA501723B72B2200166C66 /* YTX_AlertView.app */,
+				68EA503223B72B2500166C66 /* YTX_AlertViewTests.xctest */,
+				68EA503D23B72B2500166C66 /* YTX_AlertViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68EA501923B72B2200166C66 /* YTX_AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				68EA507423B7300800166C66 /* YTXActionSheet */,
+				68EA505D23B7300800166C66 /* YTXAddMenuView */,
+				68EA505723B72E2000166C66 /* NSObject+AOP.h */,
+				68EA505823B72E2000166C66 /* NSObject+AOP.m */,
+				68EA505223B72DCA00166C66 /* SelectAlertView */,
+				68EA501A23B72B2200166C66 /* AppDelegate.h */,
+				68EA501B23B72B2200166C66 /* AppDelegate.m */,
+				68EA502023B72B2200166C66 /* ViewController.h */,
+				68EA502123B72B2200166C66 /* ViewController.m */,
+				68EA502323B72B2200166C66 /* Main.storyboard */,
+				68EA502623B72B2500166C66 /* Assets.xcassets */,
+				68EA502823B72B2500166C66 /* LaunchScreen.storyboard */,
+				68EA502B23B72B2500166C66 /* Info.plist */,
+				68EA502C23B72B2500166C66 /* main.m */,
+			);
+			path = YTX_AlertView;
+			sourceTree = "<group>";
+		};
+		68EA503523B72B2500166C66 /* YTX_AlertViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				68EA503623B72B2500166C66 /* YTX_AlertViewTests.m */,
+				68EA503823B72B2500166C66 /* Info.plist */,
+			);
+			path = YTX_AlertViewTests;
+			sourceTree = "<group>";
+		};
+		68EA504023B72B2500166C66 /* YTX_AlertViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				68EA504123B72B2500166C66 /* YTX_AlertViewUITests.m */,
+				68EA504323B72B2500166C66 /* Info.plist */,
+			);
+			path = YTX_AlertViewUITests;
+			sourceTree = "<group>";
+		};
+		68EA505223B72DCA00166C66 /* SelectAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				68EA505A23B72EE800166C66 /* YTX_AlertViewController.h */,
+				68EA505B23B72EE800166C66 /* YTX_AlertViewController.m */,
+				68EA505423B72DE100166C66 /* UIButton+ExtendTouchRect.h */,
+				68EA505523B72DE100166C66 /* UIButton+ExtendTouchRect.m */,
+			);
+			path = SelectAlertView;
+			sourceTree = "<group>";
+		};
+		68EA505D23B7300800166C66 /* YTXAddMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				68EA505E23B7300800166C66 /* AddMenu.xcassets */,
+				68EA505F23B7300800166C66 /* YTXAddMenuView.m */,
+				68EA506023B7300800166C66 /* CellView */,
+				68EA506C23B7300800166C66 /* Models */,
+				68EA507323B7300800166C66 /* YTXAddMenuView.h */,
+			);
+			path = YTXAddMenuView;
+			sourceTree = "<group>";
+		};
+		68EA506023B7300800166C66 /* CellView */ = {
+			isa = PBXGroup;
+			children = (
+				68EA506123B7300800166C66 /* YTX_MenuIconTextCell.m */,
+				68EA506223B7300800166C66 /* YTX_MemuBaseCell.xib */,
+				68EA506323B7300800166C66 /* YTX_MemuBaseCell.h */,
+				68EA506423B7300800166C66 /* YTX_MenuSwitchTableViewCell.m */,
+				68EA506523B7300800166C66 /* YTX_MenuTitleTableViewCell.h */,
+				68EA506623B7300800166C66 /* YTX_MenuSwitchTableViewCell.xib */,
+				68EA506723B7300800166C66 /* YTX_MenuIconTextCell.h */,
+				68EA506823B7300800166C66 /* YTX_MenuTitleTableViewCell.xib */,
+				68EA506923B7300800166C66 /* YTX_MenuSwitchTableViewCell.h */,
+				68EA506A23B7300800166C66 /* YTX_MemuBaseCell.m */,
+				68EA506B23B7300800166C66 /* YTX_MenuTitleTableViewCell.m */,
+			);
+			path = CellView;
+			sourceTree = "<group>";
+		};
+		68EA506C23B7300800166C66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				68EA506D23B7300800166C66 /* YTXAddMenuItem.m */,
+				68EA506E23B7300800166C66 /* YTXMenuConfig.m */,
+				68EA506F23B7300800166C66 /* YTX_MenuTableViewProxy.h */,
+				68EA507023B7300800166C66 /* YTXMenuConfig.h */,
+				68EA507123B7300800166C66 /* YTXAddMenuItem.h */,
+				68EA507223B7300800166C66 /* YTX_MenuTableViewProxy.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		68EA507423B7300800166C66 /* YTXActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				68EA507523B7300800166C66 /* YTX_ActionSheetCell.h */,
+				68EA507623B7300800166C66 /* TYX_ActionSheet.h */,
+				68EA507723B7300800166C66 /* YTX_ActionSheetCell.m */,
+				68EA507823B7300800166C66 /* TYX_ActionSheet.m */,
+			);
+			path = YTXActionSheet;
+			sourceTree = "<group>";
+		};
+		B17491A3E1BED665CF9005B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FE11426692945AC9208C8A5 /* Pods-YTX_AlertView.debug.xcconfig */,
+				3A914FBFD77CCB7538E62584 /* Pods-YTX_AlertView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BBBD6BAA482E0A7BA96335C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF701319483E8A4257CBF2DB /* Pods_YTX_AlertView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68EA501623B72B2200166C66 /* YTX_AlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68EA504623B72B2500166C66 /* Build configuration list for PBXNativeTarget "YTX_AlertView" */;
+			buildPhases = (
+				DC883DD9FC94ADEC310FE9BE /* [CP] Check Pods Manifest.lock */,
+				68EA501323B72B2200166C66 /* Sources */,
+				68EA501423B72B2200166C66 /* Frameworks */,
+				68EA501523B72B2200166C66 /* Resources */,
+				98FAB2A94358182201FBDFF5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YTX_AlertView;
+			productName = YTX_AlertView;
+			productReference = 68EA501723B72B2200166C66 /* YTX_AlertView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68EA503123B72B2500166C66 /* YTX_AlertViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68EA504923B72B2500166C66 /* Build configuration list for PBXNativeTarget "YTX_AlertViewTests" */;
+			buildPhases = (
+				68EA502E23B72B2500166C66 /* Sources */,
+				68EA502F23B72B2500166C66 /* Frameworks */,
+				68EA503023B72B2500166C66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68EA503423B72B2500166C66 /* PBXTargetDependency */,
+			);
+			name = YTX_AlertViewTests;
+			productName = YTX_AlertViewTests;
+			productReference = 68EA503223B72B2500166C66 /* YTX_AlertViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		68EA503C23B72B2500166C66 /* YTX_AlertViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68EA504C23B72B2500166C66 /* Build configuration list for PBXNativeTarget "YTX_AlertViewUITests" */;
+			buildPhases = (
+				68EA503923B72B2500166C66 /* Sources */,
+				68EA503A23B72B2500166C66 /* Frameworks */,
+				68EA503B23B72B2500166C66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68EA503F23B72B2500166C66 /* PBXTargetDependency */,
+			);
+			name = YTX_AlertViewUITests;
+			productName = YTX_AlertViewUITests;
+			productReference = 68EA503D23B72B2500166C66 /* YTX_AlertViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68EA500F23B72B2200166C66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "韩微";
+				TargetAttributes = {
+					68EA501623B72B2200166C66 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					68EA503123B72B2500166C66 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 68EA501623B72B2200166C66;
+					};
+					68EA503C23B72B2500166C66 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 68EA501623B72B2200166C66;
+					};
+				};
+			};
+			buildConfigurationList = 68EA501223B72B2200166C66 /* Build configuration list for PBXProject "YTX_AlertView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68EA500E23B72B2200166C66;
+			productRefGroup = 68EA501823B72B2200166C66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68EA501623B72B2200166C66 /* YTX_AlertView */,
+				68EA503123B72B2500166C66 /* YTX_AlertViewTests */,
+				68EA503C23B72B2500166C66 /* YTX_AlertViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68EA501523B72B2200166C66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68EA507F23B7300800166C66 /* YTX_MenuTitleTableViewCell.xib in Resources */,
+				68EA507E23B7300800166C66 /* YTX_MenuSwitchTableViewCell.xib in Resources */,
+				68EA502A23B72B2500166C66 /* LaunchScreen.storyboard in Resources */,
+				68EA502723B72B2500166C66 /* Assets.xcassets in Resources */,
+				68EA507923B7300800166C66 /* AddMenu.xcassets in Resources */,
+				68EA507C23B7300800166C66 /* YTX_MemuBaseCell.xib in Resources */,
+				68EA502523B72B2200166C66 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68EA503023B72B2500166C66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68EA503B23B72B2500166C66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		98FAB2A94358182201FBDFF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YTX_AlertView/Pods-YTX_AlertView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YTX_AlertView/Pods-YTX_AlertView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YTX_AlertView/Pods-YTX_AlertView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC883DD9FC94ADEC310FE9BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YTX_AlertView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68EA501323B72B2200166C66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68EA508023B7300800166C66 /* YTX_MemuBaseCell.m in Sources */,
+				68EA507B23B7300800166C66 /* YTX_MenuIconTextCell.m in Sources */,
+				68EA505623B72DE100166C66 /* UIButton+ExtendTouchRect.m in Sources */,
+				68EA508323B7300800166C66 /* YTXMenuConfig.m in Sources */,
+				68EA508123B7300800166C66 /* YTX_MenuTitleTableViewCell.m in Sources */,
+				68EA502223B72B2200166C66 /* ViewController.m in Sources */,
+				68EA508223B7300800166C66 /* YTXAddMenuItem.m in Sources */,
+				68EA508623B7300800166C66 /* TYX_ActionSheet.m in Sources */,
+				68EA508423B7300800166C66 /* YTX_MenuTableViewProxy.m in Sources */,
+				68EA507A23B7300800166C66 /* YTXAddMenuView.m in Sources */,
+				68EA501C23B72B2200166C66 /* AppDelegate.m in Sources */,
+				68EA505C23B72EE800166C66 /* YTX_AlertViewController.m in Sources */,
+				68EA502D23B72B2500166C66 /* main.m in Sources */,
+				68EA508523B7300800166C66 /* YTX_ActionSheetCell.m in Sources */,
+				68EA507D23B7300800166C66 /* YTX_MenuSwitchTableViewCell.m in Sources */,
+				68EA505923B72E2000166C66 /* NSObject+AOP.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68EA502E23B72B2500166C66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68EA503723B72B2500166C66 /* YTX_AlertViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68EA503923B72B2500166C66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68EA504223B72B2500166C66 /* YTX_AlertViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68EA503423B72B2500166C66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68EA501623B72B2200166C66 /* YTX_AlertView */;
+			targetProxy = 68EA503323B72B2500166C66 /* PBXContainerItemProxy */;
+		};
+		68EA503F23B72B2500166C66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68EA501623B72B2200166C66 /* YTX_AlertView */;
+			targetProxy = 68EA503E23B72B2500166C66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68EA502323B72B2200166C66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68EA502423B72B2200166C66 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		68EA502823B72B2500166C66 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68EA502923B72B2500166C66 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68EA504423B72B2500166C66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		68EA504523B72B2500166C66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68EA504723B72B2500166C66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FE11426692945AC9208C8A5 /* Pods-YTX_AlertView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YTX_AlertView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hanwei.YTX-AlertView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68EA504823B72B2500166C66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A914FBFD77CCB7538E62584 /* Pods-YTX_AlertView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YTX_AlertView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hanwei.YTX-AlertView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		68EA504A23B72B2500166C66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YTX_AlertViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hanwei.YTX-AlertViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YTX_AlertView.app/YTX_AlertView";
+			};
+			name = Debug;
+		};
+		68EA504B23B72B2500166C66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YTX_AlertViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hanwei.YTX-AlertViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YTX_AlertView.app/YTX_AlertView";
+			};
+			name = Release;
+		};
+		68EA504D23B72B2500166C66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YTX_AlertViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hanwei.YTX-AlertViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YTX_AlertView;
+			};
+			name = Debug;
+		};
+		68EA504E23B72B2500166C66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YTX_AlertViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hanwei.YTX-AlertViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YTX_AlertView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68EA501223B72B2200166C66 /* Build configuration list for PBXProject "YTX_AlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68EA504423B72B2500166C66 /* Debug */,
+				68EA504523B72B2500166C66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68EA504623B72B2500166C66 /* Build configuration list for PBXNativeTarget "YTX_AlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68EA504723B72B2500166C66 /* Debug */,
+				68EA504823B72B2500166C66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68EA504923B72B2500166C66 /* Build configuration list for PBXNativeTarget "YTX_AlertViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68EA504A23B72B2500166C66 /* Debug */,
+				68EA504B23B72B2500166C66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68EA504C23B72B2500166C66 /* Build configuration list for PBXNativeTarget "YTX_AlertViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68EA504D23B72B2500166C66 /* Debug */,
+				68EA504E23B72B2500166C66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68EA500F23B72B2200166C66 /* Project object */;
+}
