@@ -7,7 +7,7 @@
 //
 
 #import "YTX_MenuTitleTableViewCell.h"
-#import "YTXAddMenuItem.h"
+#import "YTX_AddMenuView.h"
 
 @implementation YTX_MenuTitleTableViewCell
 
@@ -23,8 +23,12 @@
 }
 
 - (void)configWithData:(id)data {
-    if ([data isKindOfClass:[YTXAddMenuItem class]]) {
-        YTXAddMenuItem *item = (YTXAddMenuItem *)data;
+    if ([data isKindOfClass:[YTX_AddMenuItem class]]) {
+        YTX_AddMenuItem *item = (YTX_AddMenuItem *)data;
+//        self.textName.font = VALUE(item.attributesDic, TO_INT(Title_Font));
+//        self.textName.textColor = VALUE(item.attributesDic, TO_INT(Title_Color));
+        self.textName.font = item.titleFont;
+        self.textName.textColor = item.titleColor;
         self.textName.text = item.title;
     }
     

@@ -13,12 +13,12 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-//        self.titleLabel.font = [UIFont boldSystemFontOfSize:12];
-//        self.imageView.contentMode = UIViewContentModeCenter;
-//        self.titleLabel.textAlignment = NSTextAlignmentCenter;
-//        self.backgroundColor = [UIColor clearColor];
-//        [self setTitleColor:[UIColor colorWithHexString:@"#CCCCCC"] forState:UIControlStateNormal];
-//        [self setTitleColor:[UIColor colorWithHexString:@"#999999"] forState:UIControlStateHighlighted];
+        self.titleLabel.font = [UIFont boldSystemFontOfSize:12];
+        self.imageView.contentMode = UIViewContentModeCenter;
+        self.titleLabel.textAlignment = NSTextAlignmentCenter;
+        self.backgroundColor = [UIColor clearColor];
+        [self setTitleColor:[UIColor colorWithHexString:@"#CCCCCC"] forState:UIControlStateNormal];
+        [self setTitleColor:[UIColor colorWithHexString:@"#999999"] forState:UIControlStateHighlighted];
                 
     }
     return self;
@@ -83,7 +83,10 @@
     
     [self.selectBtn setTitle:_titleLabelStr forState:UIControlStateNormal];
     [self.selectBtn setImage:[UIImage imageNamed:self.iconPath] forState:UIControlStateNormal];
-     [self.selectBtn setImage:[UIImage imageNamed:self.iconSelectPath] forState:UIControlStateHighlighted];
+    if (!KCNSSTRING_ISEMPTY(self.iconSelectPath)) {
+        [self.selectBtn setImage:[UIImage imageNamed:self.iconSelectPath] forState:UIControlStateHighlighted];
+    }
+     
 }
 #pragma mark - Custom Accessor
 

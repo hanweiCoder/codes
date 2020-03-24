@@ -14,13 +14,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol YTX_MenuSwitchActionDelegate <NSObject>
 
-- (void)ytx_MenuSwitchAction:(id)cellData withInndex:(NSIndexPath *)indexPath;
+- (void)ytx_MenuSwitchAction:(id)cellData withInndex:(NSIndexPath *)indexPath switchView:(JTMaterialSwitch *)switchView;
 
 @end
 @interface YTX_MenuSwitchTableViewCell : YTX_MemuBaseCell
 @property (nonatomic, assign) id<YTX_MenuSwitchActionDelegate>delegate;
 @property (strong, nonatomic) IBOutlet UILabel *ytx_switchTextLabel;
-@property (strong, nonatomic) IBOutlet UISwitch *ytx_switchControl;
+@property (strong, nonatomic) IBOutlet JTMaterialSwitch *ytx_switchControl;
 @property (nonatomic, strong) NSIndexPath *indexP;
 
 @end

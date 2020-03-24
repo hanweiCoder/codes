@@ -7,11 +7,12 @@
 //
 
 #import "YTX_MemuBaseCell.h"
+//#import "YTXMenuConfig.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YTX_MenuIconTextCell : YTX_MemuBaseCell
-
+@property (nonatomic, strong) UIImageView *unreadImage;
 
 @end
 

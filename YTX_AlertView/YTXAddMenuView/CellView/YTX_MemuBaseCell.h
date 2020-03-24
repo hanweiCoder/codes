@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+//#import "YTXMenuConfig.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YTX_MemuBaseCell : UITableViewCell
 - (void)configWithData:(id)data;
+@property (nonatomic, assign) NSInteger borders;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -9,7 +9,6 @@
 #import "TYX_ActionSheet.h"
 #import "YTX_ActionSheetCell.h"
 
-#define isIPhoneX ([[UIScreen mainScreen] bounds].size.height == 812 || [[UIScreen mainScreen] bounds].size.height == 896)
 static NSString * const YTX_ActionViewCollectionViewCellReuseIdentifier = @"YTX_ActionViewCollectionViewCellReuseIdentifier";
 
 static const CGFloat kRowHeight = 48.0f;
@@ -88,7 +87,7 @@ static const NSTimeInterval kAnimateDuration = 0.3f;
             titleLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
             titleLabel.text = title;
             titleLabel.backgroundColor = [UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1.0f];
-//            titleLabel.textColor = [UIColor colorWithHexString:@"#333333"];
+            titleLabel.textColor = [UIColor colorWithHexString:@"#333333"];
             titleLabel.textAlignment = NSTextAlignmentCenter;
             titleLabel.font = [UIFont systemFontOfSize:kTitleFontSize];
             titleLabel.numberOfLines = 0;
@@ -102,7 +101,7 @@ static const NSTimeInterval kAnimateDuration = 0.3f;
         self.itemPathList = [NSArray arrayWithArray:itemPathList];
         self.itemHiglitPathList = [NSArray arrayWithArray:itemHiglitPath];
         [self createCollectionViewLayout];
-        self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, actionSheetHeight, self.frame.size.width, 100) collectionViewLayout:_collectionViewLayout];
+        self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, actionSheetHeight, kMainScreenWidth, 100) collectionViewLayout:_collectionViewLayout];
         [_actionSheetView addSubview:self.collectionView];
         self.collectionView.backgroundColor = [UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1.0f];
         self.collectionView.delegate = self;
@@ -122,8 +121,8 @@ static const NSTimeInterval kAnimateDuration = 0.3f;
             cancelButton.autoresizingMask = UIViewAutoresizingFlexibleWidth;
             cancelButton.tag = 0;
             cancelButton.titleLabel.font = [UIFont systemFontOfSize:kButtonTitleFontSize];
-            [cancelButton setTitle:cancelButtonTitle ?: @"取消" forState:UIControlStateNormal];
-//            [cancelButton setTitleColor:[UIColor colorWithHexString:@"#666666"] forState:UIControlStateNormal];
+            [cancelButton setTitle:cancelButtonTitle ?: YHCLocalizedString(@"取消") forState:UIControlStateNormal];
+            [cancelButton setTitleColor:[UIColor colorWithHexString:@"#666666"] forState:UIControlStateNormal];
             [cancelButton setBackgroundImage:normalImage forState:UIControlStateNormal];
             [cancelButton setBackgroundImage:highlightedImage forState:UIControlStateHighlighted];
             [cancelButton addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
@@ -186,7 +185,7 @@ static const NSTimeInterval kAnimateDuration = 0.3f;
             titleLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
             titleLabel.text = title;
             titleLabel.backgroundColor = [UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1.0f];
-//            titleLabel.textColor = [UIColor colorWithHexString:@"#999999"];
+            titleLabel.textColor = [UIColor colorWithHexString:@"#999999"];
             titleLabel.textAlignment = NSTextAlignmentCenter;
             titleLabel.font = [UIFont systemFontOfSize:kTitleFontSize];
             titleLabel.numberOfLines = 0;
@@ -205,7 +204,7 @@ static const NSTimeInterval kAnimateDuration = 0.3f;
             destructiveButton.tag = -1;
             destructiveButton.titleLabel.font = [UIFont systemFontOfSize:kButtonTitleFontSize];
             [destructiveButton setTitle:destructiveButtonTitle forState:UIControlStateNormal];
-//            [destructiveButton setTitleColor:[UIColor colorWithHexString:@"#F45B5B"] forState:UIControlStateNormal];
+            [destructiveButton setTitleColor:[UIColor colorWithHexString:@"#F45B5B"] forState:UIControlStateNormal];
             [destructiveButton setBackgroundImage:normalImage forState:UIControlStateNormal];
             [destructiveButton setBackgroundImage:highlightedImage forState:UIControlStateHighlighted];
             [destructiveButton addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
@@ -245,8 +244,8 @@ static const NSTimeInterval kAnimateDuration = 0.3f;
             cancelButton.autoresizingMask = UIViewAutoresizingFlexibleWidth;
             cancelButton.tag = 0;
             cancelButton.titleLabel.font = [UIFont systemFontOfSize:kButtonTitleFontSize];
-            [cancelButton setTitle:cancelButtonTitle ?: @"取消" forState:UIControlStateNormal];
-//            [cancelButton setTitleColor:[UIColor colorWithHexString:@"#212121"] forState:UIControlStateNormal];
+            [cancelButton setTitle:cancelButtonTitle ?: YHCLocalizedString(@"取消") forState:UIControlStateNormal];
+            [cancelButton setTitleColor:[UIColor colorWithHexString:@"#212121"] forState:UIControlStateNormal];
             [cancelButton setBackgroundImage:normalImage forState:UIControlStateNormal];
             [cancelButton setBackgroundImage:highlightedImage forState:UIControlStateHighlighted];
             [cancelButton addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
@@ -282,7 +281,7 @@ static const NSTimeInterval kAnimateDuration = 0.3f;
 - (void)createCollectionViewLayout {
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     //设置item尺寸
-    CGFloat itemW = (self.frame.size.width - 70) / 6;
+    CGFloat itemW = (kMainScreenWidth - 70) / 6;
     CGFloat itemH = itemW + 20;
     flowLayout.itemSize = CGSizeMake(itemW, itemH);
     CGFloat minmuInter = 10;

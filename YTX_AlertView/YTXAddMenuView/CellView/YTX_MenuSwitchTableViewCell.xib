@@ -16,31 +16,34 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlb-n7-J29">
-                        <rect key="frame" x="16" y="12" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlb-n7-J29">
+                        <rect key="frame" x="20" y="12" width="245" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rXl-ua-4za">
-                        <rect key="frame" x="247" y="7" width="49" height="31"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x1O-tu-nGK" customClass="JTMaterialSwitch">
+                        <rect key="frame" x="275" y="11.5" width="30" height="27"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="47" id="CQW-Sa-JrN"/>
+                            <constraint firstAttribute="width" constant="30" id="BL4-xb-kip"/>
+                            <constraint firstAttribute="height" constant="27" id="eek-Go-dv8"/>
                         </constraints>
-                    </switch>
+                    </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="rXl-ua-4za" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="7Ex-gS-VCT"/>
-                    <constraint firstItem="hlb-n7-J29" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Cp6-Go-llK"/>
+                    <constraint firstItem="x1O-tu-nGK" firstAttribute="leading" secondItem="hlb-n7-J29" secondAttribute="trailing" constant="10" id="2RC-TF-v36"/>
+                    <constraint firstItem="hlb-n7-J29" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Cp6-Go-llK"/>
+                    <constraint firstAttribute="trailing" secondItem="x1O-tu-nGK" secondAttribute="trailing" constant="15" id="Wny-Mo-WAE"/>
                     <constraint firstAttribute="bottom" secondItem="hlb-n7-J29" secondAttribute="bottom" constant="11" id="awb-iG-cQi"/>
-                    <constraint firstAttribute="trailing" secondItem="rXl-ua-4za" secondAttribute="trailing" constant="26" id="fbx-nd-Vu0"/>
                     <constraint firstItem="hlb-n7-J29" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="hYk-qL-G00"/>
-                    <constraint firstAttribute="bottom" secondItem="rXl-ua-4za" secondAttribute="bottom" constant="6" id="z1m-Ag-k6Y"/>
+                    <constraint firstItem="x1O-tu-nGK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="3" id="kto-DD-Fmy"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="ytx_switchControl" destination="rXl-ua-4za" id="Y3U-N1-TfL"/>
-                <outlet property="ytx_switchTextLabel" destination="hlb-n7-J29" id="lwD-CB-M5W"/>
+                <outlet property="ytx_switchControl" destination="x1O-tu-nGK" id="0fe-ni-ezE"/>
+                <outlet property="ytx_switchTextLabel" destination="hlb-n7-J29" id="cb3-mi-RC7"/>
             </connections>
             <point key="canvasLocation" x="53.623188405797109" y="89.732142857142847"/>
         </tableViewCell>

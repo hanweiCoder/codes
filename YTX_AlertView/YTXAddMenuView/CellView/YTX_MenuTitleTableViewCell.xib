@@ -16,18 +16,28 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hA-T2-ZLi">
-                        <rect key="frame" x="26" y="12" width="238" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hA-T2-ZLi">
+                        <rect key="frame" x="20" y="12" width="256" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ytxAddmenuFanHui" translatesAutoresizingMaskIntoConstraints="NO" id="ARz-iZ-DMf">
+                        <rect key="frame" x="291" y="16.5" width="11" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="ilM-rd-QEo"/>
+                            <constraint firstAttribute="width" constant="11" id="qEf-Iw-5zi"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ARz-iZ-DMf" secondAttribute="trailing" constant="18" id="2fe-p4-VOA"/>
                     <constraint firstAttribute="bottom" secondItem="1hA-T2-ZLi" secondAttribute="bottom" constant="11" id="HOH-ig-sTV"/>
-                    <constraint firstAttribute="trailing" secondItem="1hA-T2-ZLi" secondAttribute="trailing" constant="56" id="Irg-gL-xCs"/>
                     <constraint firstItem="1hA-T2-ZLi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="i8e-9n-oAA"/>
-                    <constraint firstItem="1hA-T2-ZLi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="w0O-qp-DCF"/>
+                    <constraint firstItem="ARz-iZ-DMf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sAg-lL-IlE"/>
+                    <constraint firstItem="ARz-iZ-DMf" firstAttribute="leading" secondItem="1hA-T2-ZLi" secondAttribute="trailing" constant="15" id="voM-Tr-Rrb"/>
+                    <constraint firstItem="1hA-T2-ZLi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="w0O-qp-DCF"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
@@ -36,4 +46,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="ytxAddmenuFanHui" width="16" height="16"/>
+    </resources>
 </document>
